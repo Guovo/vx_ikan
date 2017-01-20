@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
+<title>{page:key} - {maccms:name}</title>
+<meta name="keywords" content="{maccms:keywords}" />
+<meta name="description" content="{maccms:description}" />
+{maccms:include}
+<!--百度统计-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e61721e7ccb9f42aedcf6ff7f8103cd8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+{maccms:head}
+
+<div class="main">
+	<h1 class="title"><a href="{maccms:path}">首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;搜索</h1>
+	<div class="sy-all mb clearfix">
+  <div class="sy-title clearfix">
+    <p class="type">
+      &nbsp;&nbsp;与<b class="key">{page:key}</b>相关共<b class="key">{page:datacount}</b>条
+     
+     </p>
+      <p class="chg sbtn" _s_nav="sj-gjsy">筛选<i class="sjbgs"></i><i class="sjbgx"></i></p>
+    </div>
+  <div class="sy-nav-down clearfix">
+  <div id="sj-gjsy" class="sy clearfix" _s_nav="sj-gjsy" style="display:none;">
+          <dl class="clearfix"><dt><span>按分类</span></dt>
+          <dd><a href="{page:linktype}"{if-A:"{page:pid}"="0"} class="on" {endif-A}>全部</a></dd>    
+          {maccms:menu type=auto}
+          <dd><a href="[menu:link]" {if-A:"{page:id}"="[menu:id]"} class="on" {endif-A}>[menu:name]</a></dd>
+         {/maccms:menu}
+          </dl>
+          <dl class="clearfix"><dt><span>按年代</span></dt>
+         <dd><a href="{page:linkyear}" {if-A:"{page:year}"="0"} class="on" {endif-A}>全部</a></dd>
+         {maccms:year type=auto start=1995 end=2016 order=desc}
+          <dd><a href="[year:link]"{if-A:"{page:year}"="[year:name]"} class="on" {endif-A}>[year:name]
+</a></dd>
+         {/maccms:year}
+          
+          </dl>
+		  
+          <dl class="clearfix"><dt><span>按地区</span></dt>
+          <dd><a href="{page:linkarea}"{if-A:"{page:area}"="0"} class="on" {endif-A}>全部</a></dd>  
+          {maccms:area type=auto order=asc}
+		  <dd><a href="[area:link]"{if-A:"{page:area}"="[area:name]"} class="on" {endif-A}>[area:name]
+</a></dd>
+{/maccms:area}
+          </dl>
+      </div>
+    </div>
+    </div>
+  <div class="sy-jg mb">
+    <p class="jg">
+     共<span class="count">{page:datacount}</span>个筛选结果
+     </p>
+     <p class="px">
+      <a class="{if-A:"{page:by}"="time"}on {endif-A}time" href="{page:linkbytime}"><em></em>最新</a>
+      <a class="{if-A:"{page:by}"="hits"}on {endif-A}rq" href="{page:linkbyhits}"><em></em>人气</a>
+      <a class="{if-A:"{page:by}"="score"}on {endif-A}tj" href="{page:linkbyscore}"><em></em>推荐</a>
+     </p>
+  </div>
+	<div class="index-area clearfix">
+  <ul>
+   {if-A:"{page:datacount}"="0"} 
+	<ul>
+    <center><h3>对不起，没有找到您想看的影片，请加入我们的QQ群，我可以立即为您添加！<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=2ee04fa29c90694d3475b579133a60a0a1d2f7cf883df82bf2d763707ddedb91"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png">（点击加入QQ群）</a></h3></center>
+    </ul>
+{endif-A}
+	
+    {maccms:vod pagesize=18 order=desc by=time}
+    <li class="p1 m1"><a class="link-hover" href="[vod:link]" title="[vod:name]"><img class="lazy" data-original="[vod:pic]" src="{maccms:path_tpl}Images/load.gif" alt="[vod:name]"><span class="video-bg"></span><span class="lzbz"><p class="name">[vod:name]</p><p class="actor">[vod:starring]</p><p class="actor">[vod:typename]</p><p class="actor">[vod:year]/[vod:area]</p></span><p class="other"><i>[vod:remarks]</i></p></a>
+    </li>
+    {/maccms:vod}
+    
+    </ul>
+  </div>
+<div class="page mb clearfix">
+
+{maccms:pages len=5}
+
+</div>
+</div>   
+{maccms:foot}
+<!--百度自动提交代码-->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    
+var curProtocol = window.location.protocol.split(':')[0];
+    if 
+(curProtocol === 'https') {
+        bp.src = 
+'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        
+bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = 
+document.getElementsByTagName("script")[0];
+    
+s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+</body>
+</html>

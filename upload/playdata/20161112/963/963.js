@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/963-{src}-1.html?963-{src}-{num}', mac_name='七月与安生',mac_from='npiqyvip$$$tudou',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr9nifyg.html%24%24%241%24http%3A%2F%2Fwww.tudou.com%2Falbumplay%2F3aB2kfzZKw4%2FDr54PfnXDwU.html');

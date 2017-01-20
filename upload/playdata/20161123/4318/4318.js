@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/4318-{src}-1.html?4318-{src}-{num}', mac_name='我不是潘金莲',mac_from='ykyun',mac_server='webplay',mac_note='',mac_url=unescape('CODI1MDY4OA%3D%3D');

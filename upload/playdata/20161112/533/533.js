@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/533-{src}-1.html?533-{src}-{num}', mac_name='青春学堂',mac_from='npiqyvip$$$ykyun',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrn775tw.html%24%24%24BD%24CNzE2MjAwOA%3D%3D');

@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1350-{src}-1.html?1350-{src}-{num}', mac_name='与恐龙同行',mac_from='qiyi$$$npykvip',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrhokl9c.html%24%24%24%u6b63%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTc1MzU3MjkwMA%3D%3D.html');

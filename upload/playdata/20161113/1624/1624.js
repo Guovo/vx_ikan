@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1624-{src}-1.html?1624-{src}-{num}', mac_name='汉娜·蒙塔娜:电影版',mac_from='npykvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTQyMzMzODYwMA%3D%3D.html');

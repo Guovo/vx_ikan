@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/2589-{src}-1.html?2589-{src}-{num}', mac_name='失眠男女',mac_from='tudou$$$qq',mac_server='0$$$',mac_note='$$$',mac_url=unescape('1%24http%3A%2F%2Fwww.tudou.com%2Falbumplay%2FcqUJ8e1K9LA%2F7mXb5U_RnHc.html%24%24%241%24http%3A%2F%2Fv.qq.com%2Fx%2Fcover%2Fyswacmwcizg4fh0.html');

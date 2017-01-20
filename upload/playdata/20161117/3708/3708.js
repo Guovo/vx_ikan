@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3708-{src}-1.html?3708-{src}-{num}', mac_name='新木偶奇遇记',mac_from='npqqvip$$$npiqyvip',mac_server='0$$$',mac_note='$$$',mac_url=unescape('1%24q00229m3zb4%24%24%24%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr9dg7qw.html');

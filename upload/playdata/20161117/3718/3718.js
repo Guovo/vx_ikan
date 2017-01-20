@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3718-{src}-1.html?3718-{src}-{num}', mac_name='谍影重重5[国语]',mac_from='qqHDvid$$$mgtv$$$iva',mac_server='no$$$no$$$no',mac_note='$$$$$$',mac_url=unescape('%u7b2c01%u96c6%24http%3A%2F%2Fv.qq.com%2Fx%2Fcover%2Flvxqk7s7yynbdba%2Fh0022qstjot.html%24%24%24%u7b2c01%u96c6%24http%3A%2F%2Fwww.mgtv.com%2Fb%2F291526%2F3687633.html%24%24%24');

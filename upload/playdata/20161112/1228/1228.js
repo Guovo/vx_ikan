@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1228-{src}-1.html?1228-{src}-{num}', mac_name='傲慢与偏见与僵尸',mac_from='qiyi$$$qq',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrm696x0.html%24%24%241%24http%3A%2F%2Fv.qq.com%2Fx%2Fcover%2Fxsx4ut93brmkj8u.html');

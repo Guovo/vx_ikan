@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="renderer" content="webkit">
+
+<meta name="applicable-device" content="pc,mobile">
+
+<title>最新{page:name} - 2017热门{page:name}手机在线观看 - 第{page:now}页 - {maccms:name}</title>
+
+<meta name="keywords" content="最新{page:name},好看的{page:name},手机在线播放{page:name}" />
+
+<meta name="description" content="免费观看爱奇艺、腾讯、优酷、搜狐等VIP电影，手机在线观看！最新最好看的{page:name}排行榜,VIP免费电影网为您分享!" />
+
+{maccms:include}
+
+<!--百度统计代码-->
+
+
+{maccms:head}
+
+<div class="main">
+
+	<h1 class="title">{page:textlink}</h1>
+
+  <div class="sy-all mb clearfix">
+
+    <div class="sy-title clearfix">
+
+     <p class="type">
+
+      <span class="type">{page:name}</span>
+
+     </p>
+
+      <p class="chg sbtn" _s_nav="sj-gjsy">筛选<i class="sjbgs"></i><i class="sjbgx"></i></p>
+
+    </div>
+
+  <div class="sy-nav-down clearfix">
+
+  <div id="sj-gjsy" class="sy clearfix" _s_nav="sj-gjsy" style="display:none;">
+
+          <dl class="clearfix"><dt><span>按分类</span></dt>
+
+          
+
+          {maccms:menu type=auto}
+
+          <dd><a href="[menu:link]" {if-A:"{page:id}"="[menu:id]"} class="on" {endif-A}>[menu:name]</a></dd>
+
+         {/maccms:menu}
+
+          </dl>
+
+          <dl class="clearfix"><dt><span>按年代</span></dt>
+
+         
+
+         {maccms:year type=auto start=1995 end=2016 order=desc}
+
+          <dd><a href="[year:link]"{if-A:"{page:year}"="[year:name]"} class="on" {endif-A}>[year:name]
+
+</a></dd>
+
+         {/maccms:year}
+
+          
+
+          </dl>
+
+		  
+
+          <dl class="clearfix"><dt><span>按地区</span></dt>
+
+           
+
+          {maccms:area type=auto order=asc}
+
+		  <dd><a href="[area:link]"{if-A:"{page:area}"="[area:name]"} class="on" {endif-A}>[area:name]
+
+</a></dd>
+
+{/maccms:area} 
+
+          </dl>
+
+  </div>
+
+  </div>
+
+  </div>
+
+  <div class="sy-jg mb">
+
+     <p class="jg">
+
+      共<span class="count">{page:datacount}</span>个筛选结果
+
+     </p>
+
+     <p class="px">
+
+      <a class="{if-A:"{page:by}"="time"}on {endif-A}time on" href="{page:linkbytime}"><em></em>最新</a>
+
+      <a class="{if-A:"{page:by}"="hits"}on {endif-A}rq" href="{page:linkbyhits}"><em></em>人气</a>
+
+      <a class="{if-A:"{page:by}"="score"}on {endif-A}tj" href="{page:linkbyscore}"><em></em>推荐</a>
+
+     </p>
+
+  </div>
+<div class="title">=>><span style="color:#E53333;">为避免域名变动，请加微信:1926337827</span></div>
+	<div class="index-area clearfix">
+
+	<ul>
+
+    {maccms:vod pagesize=30 order=desc by=time}
+
+    <li class="p1 m1"><a class="link-hover" href="[vod:link]" title="[vod:name]"><img class="lazy" data-original="[vod:pic]" src="{maccms:path_tpl}Images/load.gif" alt="[vod:name]"><span class="video-bg"></span><span class="lzbz"><p class="name">[vod:name]</p><p class="actor">[vod:starring]</p><p class="actor">[vod:typename]</p><p class="actor">[vod:year]/[vod:area]</p></span><p class="other"><i>[vod:remarks]</i></p></a>
+
+    </li>
+
+    {/maccms:vod}
+
+  
+
+    </ul>
+
+	</div>
+
+<div class="page mb clearfix">
+
+
+
+{maccms:pages len=5}
+
+</div>   
+
+</div>
+
+<!--/底部-->
+
+{maccms:foot}
+
+<!--百度自动提交连接-->
+
+
+
+
+</body></html>
+

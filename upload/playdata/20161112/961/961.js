@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/961-{src}-1.html?961-{src}-{num}', mac_name='六弄咖啡馆',mac_from='npiqyvip$$$npykvip$$$npqqvip',mac_server='0$$$$$$',mac_note='$$$$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr95j3vc.html%24%24%24%u6b63%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTc4Mzc3MTQ4MA%3D%3D.html%24%24%241%24j002235s7kc');

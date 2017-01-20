@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/678-{src}-1.html?678-{src}-{num}', mac_name='鲁邦三世VS名侦探柯南剧场版',mac_from='npiqyvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrnew5n0.html');

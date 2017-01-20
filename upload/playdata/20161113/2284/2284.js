@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/2284-{src}-1.html?2284-{src}-{num}', mac_name='狗年',mac_from='npykvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTczMjU1MzQ2MA%3D%3D.html');

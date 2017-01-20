@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plays>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<play status="1" sort="391" from="iva" show="视频云解析" des="v.qq.com"><tip><![CDATA[]]></tip></play>
+	
+	<play status="1" sort="390" from="youku" show="优酷视频" des="youku.com"><tip><![CDATA[]]></tip></play>
+	
+	<play status="1" sort="370" from="tudou" show="土豆视频" des="tudou.com"><tip><![CDATA[]]></tip></play>
+	
+	<play status="1" sort="350" from="qq" show="腾讯视频" des="v.qq.com"><tip><![CDATA[]]></tip></play>
+	<play status="1" sort="340" from="sohu" show="搜狐视频（超清）" des="v.sohu.com"><tip><![CDATA[]]></tip></play>
+	
+	<play status="1" sort="320" from="qiyi" show="奇艺视频" des="qiyi.com"><tip><![CDATA[]]></tip></play>
+	<play status="1" sort="310" from="letv" show="乐视视频" des="letv.com"><tip><![CDATA[]]></tip></play>
+	
+	
+	
+	
+	
+	
+	
+	<play status="1" sort="200" from="swf" show="Flash文件" des="swf"><tip><![CDATA[]]></tip></play>
+	<play status="1" sort="190" from="flv" show="Flv文件" des="flv"><tip><![CDATA[]]></tip></play>
+	
+	
+	<play status="1" sort="110" from="media" show="MediaPlayer播放器" des="mediaplayer"><tip><![CDATA[]]></tip></play>
+	<play status="1" sort="10" from="link" show="外链数据" des="外部网站播放链接"><tip><![CDATA[]]></tip></play>
+<play status="1" sort="" from="mgtv" show="芒果TV" des="www.mgtv.com"><tip><![CDATA[]]></tip></play><play status="1" sort="" from="ykyun" show="优酷云" des="ykyun.com"><tip><![CDATA[]]></tip></play><play status="1" sort="" from="ckm3u8" show="ckm3u8" des="ckm3u8.com"><tip><![CDATA[]]></tip></play><play status="1" sort="" from="2mm" show="秒播" des="2mm.cn"><tip><![CDATA[]]></tip></play><play status="1" sort="" from="mjkk" show="美剧专线" des="mjkk.cn"><tip><![CDATA[]]></tip></play></plays>

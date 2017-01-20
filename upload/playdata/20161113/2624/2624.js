@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/2624-{src}-1.html?2624-{src}-{num}', mac_name='情趣体验师',mac_from='tudou$$$qiyi',mac_server='0$$$',mac_note='$$$',mac_url=unescape('1%24http%3A%2F%2Fwww.tudou.com%2Falbumplay%2F0a5HZ1K_Ow4%2FgzzS6GRrBUg.html%24%24%24%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrkey0wk.html');

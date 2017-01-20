@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1111-{src}-1.html?1111-{src}-{num}', mac_name='水果宝贝之水果总动员',mac_from='qiyi$$$qq',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrmghdiw.html%24%24%241%24http%3A%2F%2Fv.qq.com%2Fx%2Fcover%2F5gtmg1g9l5f60zc.html');

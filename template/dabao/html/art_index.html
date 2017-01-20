@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
+<title>美女图片首页 - {maccms:name}</title>
+<meta name="keywords" content="{maccms:name},性感美女,美女写真,高清图片" />
+<meta name="description" content="{maccms:name}免费提供高清性感美女图片，{maccms:name}每天更新好看的性感美女图片" />
+{maccms:include}
+<link href="{maccms:path_tpl}css/style1.css" rel="stylesheet">
+</head>
+<body>
+{maccms:head}
+<div class="main">
+<h1 class="title"><a href="/">首页</a> > <a href="{maccms:link_index_art}">美女图首页</a></h1>
+
+
+
+{maccms:matrix type=child table=art type=0} 
+      <div class="row-l">
+        <div class="channelall">
+          <div class="channeltab clearfix">
+            <div class="px"><a class="on" href="[matrix:link]">[matrix:name]</a></div>
+            <div class="sx"><a href="[matrix:link]">更多</a></div>
+          </div>
+        </div>
+
+<div class="index-area clearfix">
+	<ul>
+           {maccms:art num=12 order=desc by=time type=[matrix:id]}
+            <li class="p1 m1"><a class="link-hover" href="[art:link]  " title="[art:name]">
+              <img class="lazy" data-original="[art:pic] " src="{maccms:path_tpl}Images/load.gif" alt="[art:name]"><span class="video-bg"></span><span class="lzbz"><p class="name">[art:name]
+</p><p class="actor">[art:name]</p><p class="actor">[art:typename]</p><p class="actor"></p></span><p class="other"><i>[art:time style=m-d]</i></p></a>
+    </li>
+           {/maccms:art} 
+             
+          </ul>
+        </div>
+      </div>
+	  
+ {/maccms:matrix}
+
+
+
+<div class="select">
+<div class="selectlist clearfix"></div>
+</div>
+</div>
+
+<!--/底部-->
+{maccms:foot}
+
+</body>
+</html>

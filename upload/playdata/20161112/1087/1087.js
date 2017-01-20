@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1087-{src}-1.html?1087-{src}-{num}', mac_name='东北往事之痞子训练营',mac_from='npiqyvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrmcj260.html');

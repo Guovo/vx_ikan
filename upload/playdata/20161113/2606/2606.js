@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/2606-{src}-1.html?2606-{src}-{num}', mac_name='神经刀与飞天猫',mac_from='tudou',mac_server='0',mac_note='',mac_url=unescape('1%24http%3A%2F%2Fwww.tudou.com%2Falbumplay%2FH6xejjnswOU%2FWz60njCbTLo.html');

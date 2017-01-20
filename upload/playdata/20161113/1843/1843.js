@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1843-{src}-1.html?1843-{src}-{num}', mac_name='演员培训班',mac_from='npykvip',mac_server='0',mac_note='',mac_url=unescape('%u9884%u544a%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTQwOTQ4OTA0OA%3D%3D.html');

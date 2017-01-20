@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/856-{src}-1.html?856-{src}-{num}', mac_name='全职杀手',mac_from='npiqyvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrnwad1s.html');

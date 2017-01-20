@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1375-{src}-1.html?1375-{src}-{num}', mac_name='人间中毒',mac_from='qiyi$$$tudou$$$ykyun',mac_server='0$$$$$$',mac_note='$$$$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrn6n7ig.html%24%24%241%24http%3A%2F%2Fwww.tudou.com%2Falbumplay%2Fg4UDdDsDqLk%2FLJT7hMoRCe0.html%24%24%24BD%24CODEwNzMwOA%3D%3D');

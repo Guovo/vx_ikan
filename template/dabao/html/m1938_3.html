@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
+<title>好看的{page:name}-最新{page:name}-经典{page:name}--{maccms:name}</title>
+<meta name="keywords" content="{page:key}" />
+<meta name="description" content="{page:des}" />
+{maccms:include}
+<script src="{maccms:path_tpl}js/jquery.superslide.js" type="text/javascript"></script>
+</head>
+<body>
+<!--/头部-->
+{maccms:head}
+<div class="channel-focus">
+  <div class="channel-silder layout">
+    <ul class="channel-silder-cnt">
+    {maccms:vod num=9 order=desc by=level type={page:id}}
+      <li class="channel-silder-panel"><a class="channel-silder-img" target="_blank" href="[vod:link]"><img src="[vod:pic]"  title="[vod:name]" /></a>
+        <div class="channel-silder-intro">
+          <div class="channel-silder-title">
+            <h2><a target="_blank" href="[vod:link]" title="[vod:name]">[vod:name]</a></h2>
+            <span>{if-A:[vod:state]<1}[vod:remarks]{elseif-A:[vod:state]<1000 and [vod:state]>0}第[vod:state]集{elseif-A:[vod:state]>1000}[vod:state]期{elseif-A:[vod:state]=0 and "[vod:remarks]"=""}大结局{else-A}{endif-A}</span></div>
+          <ul class="channel-silder-info">
+            <li class="long">
+              <label>主演：</label>
+              <span>[vod:starring]</span></li>
+            <li>类型：<span>[vod:typename]</span></li>
+            <li>导演：<span>[vod:directed]</span></li>
+            <li>年份：<span>[vod:year]</span></li>
+            <li>时间：<span>[vod:time style=yy-m-d H:i:s]</span></li>
+          </ul>
+          <p class="channel-silder-desc"> 剧情：<span>[vod:contenttext len=120]..</span></p>
+          <a class="channel-silder-play" target="_blank" href="[vod:link]" title="观看《[vod:name]》">马上观看</a></div>
+      </li>{/maccms:vod} 
+      
+    </ul>
+    <ul class="channel-silder-nav">
+    {maccms:vod num=9 order=desc by=level type={page:id}}
+      <li><a target="_blank" href="[vod:link]" ><img class="lazy" data-original="[vod:pic]" src="{maccms:path_tpl}Images/load.gif" alt="[vod:name]"></a></li>
+      {/maccms:vod}
+      
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">
+	jQuery(".channel-silder").slide({ 
+		titCell:".channel-silder-nav li",
+		mainCell:".channel-silder-cnt",
+		delayTime:800,
+		triggerTime:0,
+		interTime:5000,
+		pnLoop:false,
+		autoPage:false,
+		autoPlay:true
+	});
+</script>
+
+<div class="main">
+<!--首页推荐-->
+
+ 
+<!--获取所以顶级目录加内容-->
+{maccms:matrix parent={page:id} table=vod} 
+	<div class="index-area clearfix">
+    <h1 class="title index-color">
+       <span class="hitkey kp">
+      
+ {maccms:menu type=child order=asc parent=[matrix:id] }    
+      <li><a href="[menu:link]">[menu:name]</a></li>
+       {/maccms:menu}
+      
+	
+      <a href="[matrix:link]">更多»</a>
+      </span>
+      <a href="[matrix:link]">[matrix:name]</a>
+	  </h1>
+    <ul>
+    
+   	{maccms:vod num=6 order=desc by=level type=[matrix:id]  }
+    <li class="p1 m1"><a class="link-hover" href="[vod:link]" title="[vod:name]"><img class="lazy" data-original="[vod:pic]" src="{maccms:path_tpl}Images/load.gif" alt="[vod:name]"><span class="video-bg"></span><span class="lzbz"><p class="name">[vod:name]</p><p class="actor">[vod:starring]</p><p class="actor">[vod:typename]</p><p class="actor">[vod:year]/[vod:area]</p></span><p class="other"><i>[vod:remarks]</i></p></a>
+    </li>
+    {/maccms:vod}
+	
+    </ul>
+    </div>
+    
+{/maccms:matrix}
+
+<!--结束-->
+    
+
+    
+</div>
+<div class="ylink clearfix">
+友情连接：
+    <a href="/" target="_blank">{maccms:name}</a>
+    
+    {maccms:link num=10}   
+    <a href="[link:link]" target="_blank">[link:name]</a>	
+	{/maccms:link}
+</div>
+<!--/底部-->
+{maccms:foot}
+
+</body>
+</html>

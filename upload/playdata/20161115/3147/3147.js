@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3147-{src}-1.html?3147-{src}-{num}', mac_name='奇葩追梦',mac_from='npykvip$$$npiqyvip',mac_server='no$$$no',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTgxNzYyNTM0MA%3D%3D.html%24%24%24%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrlyz38w.html');

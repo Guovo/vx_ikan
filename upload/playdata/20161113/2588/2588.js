@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/2588-{src}-1.html?2588-{src}-{num}', mac_name='绝色武器',mac_from='tudou',mac_server='0',mac_note='',mac_url=unescape('1%24http%3A%2F%2Fwww.tudou.com%2Falbumplay%2F8_m21Xxf2xo%2F0h9nODCbbx4.html');

@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1150-{src}-1.html?1150-{src}-{num}', mac_name='泰迪熊之玩具大战',mac_from='qiyi$$$qq',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrm7xqwc.html%24%24%241%24http%3A%2F%2Fv.qq.com%2Fx%2Fcover%2Fz304g9m8a3axm8g.html');

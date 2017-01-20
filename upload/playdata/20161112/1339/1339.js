@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1339-{src}-1.html?1339-{src}-{num}', mac_name='西游记之大闹天宫',mac_from='qiyi',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrh4cjcc.html');

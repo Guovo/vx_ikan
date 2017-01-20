@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/752-{src}-1.html?752-{src}-{num}', mac_name='青春失乐园',mac_from='npmgvip',mac_server='0',mac_note='',mac_url=unescape('%u9ad8%u6e05%24http%3A%2F%2Fwww.mgtv.com%2Fb%2F3162%2F250016.html');

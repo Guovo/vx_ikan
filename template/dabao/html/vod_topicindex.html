@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>专辑列表_第{page:now}页_{maccms:name}</title>
+<meta name="keywords" content="动漫新番,精彩专题,动漫专题" />
+<meta name="description" content="{maccms:name}不定期为漫迷们推出新的动漫专题及其他视频专辑,来满足不同爱好的漫迷者们.这里介绍最经典的动漫大全,希望大家喜欢！" />
+{maccms:include}
+<link href="{maccms:path_tpl}dm/css/style1.css" rel="stylesheet" type="text/css">
+<!--百度统计-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e61721e7ccb9f42aedcf6ff7f8103cd8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+{maccms:head}
+<div class="wrap  ds_zhuanti">
+  <div class="money_all"><script type="text/javascript" language="javascript" src="{maccms:path_ads}all-top.js"></script></div>
+  <div class="box mb">
+    <div class="main l">
+      <div class="b hot_topic">
+        <h4><strong>近期热门专题</strong></h4>
+        <ul>  {maccms:topic num=3 order=desc by=monthhits}
+          <li><a href="[topic:link]" class="l"><img class="lazy" data-original="[topic:pic]" src="{maccms:path}images/blank.png" alt="[topic:name]"/></a><div class="htr r"><h3><a href="[topic:link]">[topic:name]</a><span>共[topic:count]部</span></h3><p>[topic:des len=14]<a href="[topic:link]">[详细]</a></p></div></li> {/maccms:topic}
+        </ul>
+      </div>
+      <!--/Hot Topic-->
+    </div>
+    <!--/Main-->
+    <div class="side r">
+      <div class="svlist b">
+        <h5>最新专题排行榜</h5>
+        <ul>
+          {maccms:topic num=14 order=desc by=weekhits}
+<li><h3><em{if-A:[topic:num]<4} class="n3"{endif-A}>{if-A:[topic:num]<10}0[topic:num]{else-A}[topic:num]{endif-A}</em><a href="[topic:link]" target="_blank">[topic:name]</a></h3><span> </span></li>
+{/maccms:topic}
+        </ul>
+      </div>
+      <!--/SVList-->
+    </div>
+    <!--/Side-->
+  </div>
+  <!--/Box-->
+<div class="box mb"><script type="text/javascript" language="javascript" src="{maccms:path_ads}index902.js"></script></div>
+  <div class="box mb">
+    <div class="main l">
+      <div class="b hot_topic topic_list">
+        <h4><strong>精彩专题总汇</strong></h4>
+        <ul>
+        {maccms:topic pagesize=10 order=desc by=time}
+          <li><a href="[topic:link]" class="l"><img class="lazy" data-original="[topic:pic]" src="{maccms:path}images/blank.png" alt="[topic:name]"/></a><h3><a href="[topic:link]">[topic:name]</a></h3><p>[topic:count]<a href="[topic:link]">[详细]</a></p></li>
+       {/maccms:topic}
+       </ul>
+        <div class="page">{maccms:pages len=6}</div>
+      </div>
+      <!--/Hot Topic-->
+    </div>
+    <!--/Main-->
+    <div class="side r">
+      <div class="svlist b">
+        <h5>热门专题排行榜</h5>
+        <ul>
+          {maccms:topic num=39 order=desc by=hits}
+<li><h3><em{if-A:[topic:num]<4} class="n3"{endif-A}>{if-A:[topic:num]<10}0[topic:num]{else-A}[topic:num]{endif-A}</em><a href="[topic:link]" target="_blank">[topic:name]</a></h3><span> </span></li>
+{/maccms:topic}
+        </ul>
+      </div>
+      <!--/SVList-->
+    </div>
+    <!--/Side-->
+  </div>
+  <!--/Box-->
+  <div class="money_all"><script type="text/javascript" language="javascript" src="{maccms:path_ads}index902.js"></script></div>
+</div>
+<!--/Wrap-->
+{maccms:foot}
+<!--百度自动提交代码-->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    
+var curProtocol = window.location.protocol.split(':')[0];
+    if 
+(curProtocol === 'https') {
+        bp.src = 
+'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        
+bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = 
+document.getElementsByTagName("script")[0];
+    
+s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+</body>
+</html>

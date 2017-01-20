@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/2615-{src}-1.html?2615-{src}-{num}', mac_name='旋风小子2:新乌龙院',mac_from='tudou',mac_server='0',mac_note='',mac_url=unescape('1%24http%3A%2F%2Fwww.tudou.com%2Falbumplay%2F0MSSNzmPpvA%2FWOsXs0VQmoY.html');

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
+<title>{page:name} - {maccms:name}</title>
+<meta name="keywords" content="{page:name}第{page:now}页{page:key},{maccms:name}" />
+<meta name="description" content="{maccms:name}免费提供{page:name}高清在线观看{page:des}，" />
+{maccms:include}
+<link href="{maccms:path_tpl}css/style1.css" rel="stylesheet">
+</head>
+<body>
+{maccms:head}
+<div class="main">
+<h1 class="title">{page:textlink}</h1>
+<div class="sy-jg mb">
+     <p class="jg">
+      共<span class="count">{page:datacount}</span>个筛选结果
+     </p>
+</div>
+      <div class="row-l">
+
+        <div class="index-area clearfix">
+	<ul>
+           {maccms:art pagesize=30 order=desc by=time}
+            <li class="p1 m1"><a class="link-hover" href="[art:link]  " title="[art:name]">
+              <img class="lazy" data-original="[art:pic] " src="{maccms:path_tpl}Images/load.gif" alt="[art:name]"><span class="video-bg"></span><span class="lzbz"><p class="name">[art:name]
+</p><p class="actor">[art:name]</p><p class="actor">[art:typename]</p><p class="actor"></p></span><p class="other"><i>[art:time style=m-d]</i></p></a>
+    </li>
+           {/maccms:art} 
+             
+          </ul>
+        </div>
+      </div>
+<div class="page mb clearfix">
+{maccms:pages len=5}
+</div> 	  
+
+<div class="select">
+<div class="selectlist clearfix"></div>
+</div>
+</div>
+
+<!--/底部-->
+{maccms:foot}
+
+</body>
+</html>

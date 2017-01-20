@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/393-{src}-1.html?393-{src}-{num}', mac_name='末日迷踪',mac_from='qiyi$$$qq',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrl249d8.html%24%24%241%24http%3A%2F%2Fv.qq.com%2Fx%2Fcover%2Fdh659iuzf23vy9w.html');

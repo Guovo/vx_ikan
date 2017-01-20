@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/2609-{src}-1.html?2609-{src}-{num}', mac_name='杀手之王',mac_from='tudou',mac_server='0',mac_note='',mac_url=unescape('1%24http%3A%2F%2Fwww.tudou.com%2Falbumplay%2Fcb-kv3Emrz4%2FfLw-G0ToXn4.html');

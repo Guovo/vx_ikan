@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/836-{src}-1.html?836-{src}-{num}', mac_name='生死新纪元',mac_from='npiqyvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrn4qogk.html');

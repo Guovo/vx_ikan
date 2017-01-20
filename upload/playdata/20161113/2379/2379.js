@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/2379-{src}-1.html?2379-{src}-{num}', mac_name='灰姑娘职场记',mac_from='npykvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTc4MzE2MTE5Mg%3D%3D.html');

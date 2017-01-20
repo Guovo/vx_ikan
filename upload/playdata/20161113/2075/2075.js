@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/2075-{src}-1.html?2075-{src}-{num}', mac_name='传奇之百人斩少女',mac_from='npykvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTYwOTM5NTE5Mg%3D%3D.html');

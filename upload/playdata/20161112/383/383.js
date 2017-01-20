@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/383-{src}-1.html?383-{src}-{num}', mac_name='我不是王毛',mac_from='qiyi$$$qq',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrl0sc8s.html%24%24%241%24http%3A%2F%2Fv.qq.com%2Fx%2Fcover%2Fl114uouvgcx473c.html');

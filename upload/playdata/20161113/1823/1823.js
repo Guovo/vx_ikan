@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1823-{src}-1.html?1823-{src}-{num}', mac_name='落跑吧爱情',mac_from='npykvip',mac_server='0',mac_note='',mac_url=unescape('http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTUxMDcxNDM3Ng%3D%3D.html');

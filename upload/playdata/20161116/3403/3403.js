@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3403-{src}-1.html?3403-{src}-{num}', mac_name='恋爱的正确姿势',mac_from='npqqvip',mac_server='0',mac_note='',mac_url=unescape('1%24f0022z7xg4t');

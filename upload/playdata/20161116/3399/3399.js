@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3399-{src}-1.html?3399-{src}-{num}', mac_name='王牌逗王牌[国语版]',mac_from='npqqvip',mac_server='0',mac_note='',mac_url=unescape('1%24t00223y4lrt');

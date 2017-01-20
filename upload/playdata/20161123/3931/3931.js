@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3931-{src}-1.html?3931-{src}-{num}', mac_name='黑暗制裁',mac_from='qq',mac_server='0',mac_note='',mac_url=unescape('1%24http%3A%2F%2Fv.qq.com%2Fx%2Fcover%2Fe7c7cwbn0016x4n.html');

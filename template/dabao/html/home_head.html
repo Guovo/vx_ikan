@@ -1,0 +1,264 @@
+<div class="header-all">
+
+  <div class="top clearfix">
+
+    <ul class="logo"><a href="{maccms:path}"><img src="{maccms:path_tpl}Images/logo.png" title="{maccms:name}"></a></ul>
+
+    <ul class="top-nav">
+
+      <li><a class="now" href="{maccms:path}" {if-A:{maccms:siteaid}=10} class="on"{endif-A}>首页</a></li>
+
+      <!--导航-->
+
+      {maccms:menu type=parent order=asc num=4}
+
+      <li class="" _t_nav="topnav-[menu:num]"><a href="[menu:link]" {if-A:{maccms:curvodtypeid}=[menu:id]} class="on"{endif-A}>[menu:name]<i class="sjbgs"></i><i class="sjbgx"></i></a></li>
+
+      {/maccms:menu}
+
+<li><a href="/?m=vod-type-id-36.html"target="_blank" rel="nofollow">伦理片</a></li> 
+<li><a href="/?m=vod-type-id-38.html"target="_blank" rel="nofollow">写真集</a></li> 
+      <li><a href="{maccms:getlink zhibo.html}"target="_blank" rel="nofollow">直播</a></li>   
+
+       <li><a href="http://shang.qq.com/wpa/qunwpa?idkey=2ee04fa29c90694d3475b579133a60a0a1d2f7cf883df82bf2d763707ddedb91"target="_blank" rel="nofollow">留言</a></li>
+
+</ul>
+
+    </ul>
+
+	    <ul class="search so">
+
+<form action="{maccms:link_search_vod}" method="post">
+
+        <input type="text" id="wd" name="wd" class="input" onblur="if(this.value==''){ this.value='请输入影片或演员名';this.style.color='#cfcdcd';}" onfocus="if(this.value=='请输入影片或演员名'){this.value='';this.style.color='';}" value="请输入影片或演员名" />
+
+		  <div class="so-key">	
+
+		  <!--搜索显示推荐-->
+
+		  {maccms:vod num=6 order=desc by=time type=all} 
+
+		  <a  target="_blank" href='[vod:link]'>[vod:name len=6]</a> 
+
+          {/maccms:vod} 
+
+		  </div>
+
+        <input type="submit" name="submit" class="imgbt" value="" />
+
+      </form>
+
+    </ul>
+
+    <ul class="nav-qt aa">
+
+     <li class="bb">
+<!--<a href=# onclick="JavaScript:addFavorite2()">加入收藏</a>-->
+	  <!--<a  href="#" onclick="window.external.AddFavorite(&quot;http://{maccms:url}&quot;,&quot;{maccms:name}电影网&quot;)"><i class="jl"></i>加入收藏</a>-->
+
+      </li>
+
+      <li class="bb"><strong class="ma"><i class="mabg"></i>手机观看</strong>
+
+      <div class="cc maw"><i class="ewmbg"></i><p>微信扫描关注公众号</p></div>  
+
+<!--<li class="bb member"><strong class="ma"><i class="mbbg"></i></strong><div class="cc mbp"></div> </li>--></ul>
+
+<ul class="sj-search"><li class="sbtn2"><i class="sjbg-search"></i></li></ul>
+
+<ul class="sj-nav"><li class="sbtn1"><i class="sjbg-nav"></i></li></ul>
+
+<ul class="sj-navhome"><li><a href="/"><i class="sjbg-home"></i></a></li></ul>  </div>
+
+  <!--分类子目录-->
+
+<div class="nav-down clearfix">
+
+<div id="topnav-1" class="nav-down-1" style="display:none;" _t_nav="topnav-1">
+
+<div class="nav-down-2 clearfix"><ul>
+
+{maccms:menu  order=asc parent=1 }    
+
+      <li><a href="[menu:link]">[menu:name]</a></li>
+
+       {/maccms:menu} 
+
+</ul></div></div>
+
+<div id="topnav-2" class="nav-down-1" style="display:none;" _t_nav="topnav-2">
+
+<div class="nav-down-2 clearfix">
+
+<ul>
+
+{maccms:menu  order=asc parent=2 }    
+
+      <li><a href="[menu:link]">[menu:name]</a></li>
+
+       {/maccms:menu}    
+
+</ul></div></div><div id="topnav-3" class="nav-down-1" style="display:none;" _t_nav="topnav-3">
+
+<div class="nav-down-2 clearfix"><ul>
+
+{maccms:menu  order=asc parent=3 }    
+
+      <li><a href="[menu:link]">[menu:name]</a></li>
+
+       {/maccms:menu}     
+
+</ul></div></div>
+
+<div id="topnav-4" class="nav-down-1" style="display:none;" _t_nav="topnav-4">
+
+<div class="nav-down-2 clearfix"><ul>
+
+{maccms:menu  order=asc parent=4 }    
+
+      <li><a target="_blank"  href="[menu:link]">[menu:name]</a></li>
+
+       {/maccms:menu} 
+
+</ul></div></div>
+
+<div id="topnav-5" class="nav-down-1" style="display:none;" _t_nav="topnav-5">
+
+<div class="nav-down-2 clearfix"><ul>
+
+{maccms:menu  order=asc parent=5 }    
+
+      <li><a href="[menu:link]">[menu:name]</a></li>
+
+       {/maccms:menu} 
+
+</ul></div></div>
+
+ <div id="topnav-6" class="nav-down-1" style="display:none;" _t_nav="topnav-6">
+
+<div class="nav-down-2 clearfix"><ul>
+
+{maccms:menu  order=asc parent=6 }    
+
+      <li><a  target="_blank" href="[menu:link]">[menu:name]</a></li>
+
+       {/maccms:menu}   
+
+        </ul>
+
+      </div>
+
+    </div>
+
+   <!--美女图结束-->
+
+    <!--美女图片-->
+
+      <div id="topnav-news" class="nav-down-1" style="display:none;" _t_nav="topnav-news">
+
+      <div class="nav-down-2 clearfix">
+
+        <ul>
+
+          {maccms:matrix type=child table=art type=0} 
+
+          <li> <a  target="_blank" href="[matrix:link]">[matrix:name] </a> </li>
+
+           {/maccms:matrix}         
+
+        </ul>
+
+      </div>
+
+    </div>
+
+   <!--美女图结束-->
+
+<!--手机版导航-->
+
+  <div id="sj-nav-1" class="nav-down-1 sy1 sj-noover" style="display:none;" _s_nav="sj-nav-1">
+
+    <div class="nav-down-2 sj-nav-down-2 clearfix">
+
+    <ul> 
+
+      <li><a target="_blank" href="{maccms:path}"{if-A:{maccms:siteaid}=10} class="on"{endif-A}>首页</a></li>
+
+	   {maccms:menu type=1,2,3,4 order=asc  }
+
+      <li><a  target="_blank" href="[menu:link]"{if-A:{maccms:curvodtypeid}=[menu:id]} class="on"{endif-A}>[menu:name]</a></li>
+
+        {/maccms:menu}
+
+<li><a target="_blank" href="/?m=vod-type-id-5.html">动作片</a></li>
+<li><a target="_blank" href="/?m=vod-type-id-6.html">喜剧片</a></li>
+<li><a target="_blank" href="/?m=vod-type-id-7.html">爱情片</a></li>
+<li><a target="_blank" href="/?m=vod-type-id-21.html">青春片</a></li>
+<li><a target="_blank" href="/?m=vod-type-id-8.html">科幻片</a></li>
+<li><a target="_blank" href="/?m=vod-type-id-9.html">恐怖片</a></li>
+<li><a target="_blank" href="/?m=vod-type-id-10.html">剧情片</a></li>
+<li><a target="_blank" href="/?m=vod-type-id-11.html">战争片</a></li>
+<li><a target="_blank" href="/?m=vod-type-id-18.html">魔幻片</a></li>
+<li><a target="_blank" href="/?m=vod-type-id-18.html">犯罪片</a></li>
+<li><a target="_blank" href="/?m=vod-type-id-16.html">微电影</a></li>
+<li><a target="_blank" href="http://v.z-boss.cn/?m=vod-type-id-36.html">伦理片</a></li>
+<li><a target="_blank" href="http://v.z-boss.cn/?m=vod-type-id-38.html">写真集</a></li>
+<li><a target="_blank" href="/?m=label-zhibo.html">电视直播</a></li>
+<li><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=2ee04fa29c90694d3475b579133a60a0a1d2f7cf883df82bf2d763707ddedb91"">求片留言</a></li>
+ 
+    </ul>
+
+    </div>
+
+  </div>
+
+  <div id="sj-nav-search" class="nav-down-1 sy2 sj-noover" style="display:none;" _t_nav1="sj-nav-search">
+
+    <div class="nav-down-2 sj-nav-down-search clearfix">
+
+<form action="{maccms:link_search_vod}" method="post">
+
+        <input type="text" id="wd" name="wd" class="input" onblur="if(this.value==''){ this.value='输入关键词';this.style.color='#cfcdcd';}" onfocus="if(this.value=='输入关键词'){this.value='';this.style.color='';}" value="输入关键词" />
+
+        <input type="submit" name="submit" class="imgbt" value="搜 索" />
+
+      </form>
+
+</form></div></div></div></div>
+
+
+
+<!--<div class="leaveNavInfo">
+
+<h3><span id="adminleaveword"></span><font size="" color="red">提示：</font>分享至你的微信朋友圈或QQ空间，会自动切换到<font size="" color="red">极速播放模式！</font>
+</h3>
+<!--<h3><span id="adminleaveword"></span>请在右上角搜索你想看的影视！如果找不到请联系我帮你添加！
+</h3>-->
+
+<!--走字-->
+<!--<center><div style="width:100%;">
+<div class="profile_opr" style="text-align:center;margin:1px;padding:1px 0px;border:1px solid #993300;font-size:18px;color:#000000;background-color:#ff9933;"><marquee scrollamount="5" behavior="right"><strong>本站所有视频均来自互联网收集而来，可能会有部分视频播放不了，如果有视频播放不了，请及时在QQ群内通知我们，我们将立即修复！<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=2ee04fa29c90694d3475b579133a60a0a1d2f7cf883df82bf2d763707ddedb91"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png">（点击加入QQ群）</a></strong></marquee></div></div></center>-->
+
+  <!--公众号-->
+  <!--<center><a id="weui_btn" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI2MDExODExNQ==&mid=2247483658&idx=1&sn=06874c04b3954362b4089d2cff4c27ca&chksm=ea6fc206dd184b10b34523aee0766d498c7441a2e032f331e154677da031062bd0acb621c06f">
+<div class="profile_opr" style="text-align:center;margin:1px;padding:4px 0px;border:2px solid #04BE02;font-size:18px;color:#04BE02;background-color:#FFFFFF;">
+请点击关注公众号，更多激情视频（你懂的）
+</div></a></div></center>-->
+
+  <!--提醒-->
+
+
+
+</div>
+
+</div>
+
+<!--/麒麟点击广告-->
+<!--<div style="width:100%;">
+
+<div class="profile_opr"  style="text-align:center;margin:0px;padding:3px 0px;border:0px solid #1c1c1c;font-size:18px;color:#FFFFFF;background-color:#1c1c1c;"><br /><br /><br />
+	<strong><span style="color:#cc0000;font-size:24px;">提醒</span></strong> </div>
+<div class="profile_opr"  style="text-align:center;margin:0px;padding:3px 0px;border:0px solid #1c1c1c;font-size:18px;color:#FFFFFF;background-color:#1c1c1c;">
+本站所有视频均为互联网收集而来，如有播放不了请在QQ群内报错 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=2ee04fa29c90694d3475b579133a60a0a1d2f7cf883df82bf2d763707ddedb91"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" /></a> <br />
+由于工信部严打，近期经常变更域名，请加微信1926337827，以免跟丢
+</div>-->

@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3397-{src}-1.html?3397-{src}-{num}', mac_name='少年师爷之大禹宝藏',mac_from='npqqvip',mac_server='0',mac_note='',mac_url=unescape('1%24a0022m3nr9v');

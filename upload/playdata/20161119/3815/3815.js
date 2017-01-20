@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3815-{src}-1.html?3815-{src}-{num}', mac_name='九五2班',mac_from='npiqyvip',mac_server='no',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr9l9kcw.html');

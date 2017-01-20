@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1907-{src}-1.html?1907-{src}-{num}', mac_name='火车大劫案',mac_from='npykvip$$$tudou',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTUwNzA4ODQ1Mg%3D%3D.html%24%24%241%24http%3A%2F%2Fwww.tudou.com%2Falbumplay%2FjuihQEDCVgM%2FsJxsSOuiaUg.html');

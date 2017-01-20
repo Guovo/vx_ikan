@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/537-{src}-1.html?537-{src}-{num}', mac_name='分歧者1：异类觉醒',mac_from='npiqyvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rro5av1g.html');

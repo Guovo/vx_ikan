@@ -1,0 +1,42 @@
+<div class="weeks">
+  <ul class="weekItem" id="weektab">
+    <li>一</li><li>二</li><li>三</li><li>四</li><li>五</li><li>六</li><li>日</li>
+  </ul>
+  
+  
+  
+  
+  <div class="box01_c" id="weekcon">
+    <div style="position:relative;">
+      <dl>
+        <dt>周一</dt>
+		{maccms:vod order=desc by=hits tag=周一更新}<dd>{if-A:"[vod:time style=y-m-d]" = date('y-m-d',time())}<span class="today">今日更新</span>{else-A}<span>{if-B:[vod:state]<5000 and [vod:state]>0}更新至第[vod:state]话{elseif-B:[vod:state]>5000}[vod:state]期{elseif-B:[vod:state]=0 and "[vod:remarks]"}[vod:remarks]{else-B}{if-C:"[vod:typepid]=4"}已完结{elseif-C}全集{endif-C}{endif-B}</span>{endif-A}<a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>{/maccms:vod}
+      </dl>
+      <dl>
+        <dt>周二</dt>
+        {maccms:vod order=desc by=hits tag=周二更新}<dd>{if-A:"[vod:time style=y-m-d]" = date('y-m-d',time())}<span class="today">今日更新</span>{else-A}<span>{if-B:[vod:state]<5000 and [vod:state]>0}更新至第[vod:state]话{elseif-B:[vod:state]>5000}[vod:state]期{elseif-B:[vod:state]=0 and "[vod:remarks]"}[vod:remarks]{else-B}{if-C:"[vod:typepid]=4"}已完结{elseif-C}全集{endif-C}{endif-B}</span>{endif-A}<a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>{/maccms:vod}
+      </dl>
+      <dl>
+        <dt>周三</dt>
+        {maccms:vod order=desc by=hits tag=周三更新}<dd>{if-A:"[vod:time style=y-m-d]" = date('y-m-d',time())}<span class="today">今日更新</span>{else-A}<span>{if-B:[vod:state]<5000 and [vod:state]>0}更新至第[vod:state]话{elseif-B:[vod:state]>5000}[vod:state]期{elseif-B:[vod:state]=0 and "[vod:remarks]"}[vod:remarks]{else-B}{if-C:"[vod:typepid]=4"}已完结{elseif-C}全集{endif-C}{endif-B}</span>{endif-A}<a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>{/maccms:vod}
+      </dl>
+      <dl>
+        <dt>周四</dt>
+        {maccms:vod order=desc by=hits tag=周四更新}<dd>{if-A:"[vod:time style=y-m-d]" = date('y-m-d',time())}<span class="today">今日更新</span>{else-A}<span>{if-B:[vod:state]<5000 and [vod:state]>0}更新至第[vod:state]话{elseif-B:[vod:state]>5000}[vod:state]期{elseif-B:[vod:state]=0 and "[vod:remarks]"}[vod:remarks]{else-B}{if-C:"[vod:typepid]=4"}已完结{elseif-C}全集{endif-C}{endif-B}</span>{endif-A}<a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>{/maccms:vod}
+      </dl>
+      <dl>
+        <dt>周五</dt>
+        {maccms:vod order=desc by=hits tag=周五更新}<dd>{if-A:"[vod:time style=y-m-d]" = date('y-m-d',time())}<span class="today">今日更新</span>{else-A}<span>{if-B:[vod:state]<5000 and [vod:state]>0}更新至第[vod:state]话{elseif-B:[vod:state]>5000}[vod:state]期{elseif-B:[vod:state]=0 and "[vod:remarks]"}[vod:remarks]{else-B}{if-C:"[vod:typepid]=4"}已完结{elseif-C}全集{endif-C}{endif-B}</span>{endif-A}<a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>{/maccms:vod}
+      </dl>
+      <dl>
+        <dt>周六</dt>
+        {maccms:vod order=desc by=hits tag=周六更新}<dd>{if-A:"[vod:time style=y-m-d]" = date('y-m-d',time())}<span class="today">今日更新</span>{else-A}<span>{if-B:[vod:state]<5000 and [vod:state]>0}更新至第[vod:state]话{elseif-B:[vod:state]>5000}[vod:state]期{elseif-B:[vod:state]=0 and "[vod:remarks]"}[vod:remarks]{else-B}{if-C:"[vod:typepid]=4"}已完结{elseif-C}全集{endif-C}{endif-B}</span>{endif-A}<a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>{/maccms:vod}
+      </dl>
+      <dl>
+        <dt>周日</dt>
+        {maccms:vod order=desc by=hits tag=周日更新}<dd>{if-A:"[vod:time style=y-m-d]" = date('y-m-d',time())}<span class="today">今日更新</span>{else-A}<span>{if-B:[vod:state]<5000 and [vod:state]>0}更新至第[vod:state]话{elseif-B:[vod:state]>5000}[vod:state]期{elseif-B:[vod:state]=0 and "[vod:remarks]"}[vod:remarks]{else-B}{if-C:"[vod:typepid]=4"}已完结{elseif-C}全集{endif-C}{endif-B}</span>{endif-A}<a href="[vod:link]" title="[vod:name]">[vod:name]</a></dd>{/maccms:vod}
+        
+      </dl>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/2309-{src}-1.html?2309-{src}-{num}', mac_name='三个孬家伙',mac_from='npykvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTczNTUyMjI2OA%3D%3D.html');

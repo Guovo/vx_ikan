@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/4420-{src}-1.html?4420-{src}-{num}', mac_name='今夜不设房',mac_from='qq',mac_server='0',mac_note='',mac_url=unescape('1%24http%3A%2F%2Fv.qq.com%2Fx%2Fcover%2Fwskplxtqtaueqcb.html');

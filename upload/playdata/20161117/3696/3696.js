@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3696-{src}-1.html?3696-{src}-{num}', mac_name='奥林匹斯的陷落',mac_from='qiyi',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrh68i2o.html');

@@ -1,0 +1,549 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=uft8">
+<title>{maccms:name} </title>
+<link href="{maccms:path_tpl}css/xiaog.css" rel="stylesheet" type="text/css"/>
+<link href="{maccms:path_tpl}css/focus.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="{maccms:path_tpl}js/jquery-1.4.1.min.js"></script>
+<script>head="home";</script>
+{maccms:include}
+</head>
+<body>
+<div id="wrap" class="">
+	<script type="text/javascript" src="{maccms:path_tpl}js/head.js"></script>
+<script type="text/javascript" src="{maccms:path_tpl}js/web.js"></script>
+<script type="text/javascript" src="{maccms:path_tpl}js/cookie.js"></script>
+<script type="text/javascript" src="{maccms:path_tpl}js/subscription_2013.js"></script>
+<!-- header -->
+{maccms:head}
+<!-- //header -->
+<script type="text/javascript">
+if($("#"+head).length > 0){
+	$("#"+head).addClass("cur");
+	$("#"+head).html($("#"+head+" a").html())
+}
+if($("#form_query").val()){
+	$(".qreset2").show();
+}else{
+	$(".qreset2").hide();
+}
+
+$("#form_query").keyup(function() {
+    if($("#form_query").val()){
+    	$(".qreset2").show();
+    }else{
+    	$(".qreset2").hide();
+    }
+});
+
+$(document).ready(function(){
+	$("#back-to-top").hide();
+	$(function () {
+		$(window).scroll(function(){
+			if ($(window).scrollTop()>100){
+				$("#back-to-top").fadeIn(500);
+			}
+			else{
+				$("#back-to-top").fadeOut(500);
+			}
+		});
+
+		//当点击跳转链接后，回到页面顶部位置
+		$("#back-to-top").click(function(){
+			$('body,html').animate({scrollTop:0}, "fast");
+				return false;
+		});
+	});
+});
+</script>
+<a class="btn_gotop" id="back-to-top" href="javascript:void(0)"><span class="btn_gotop_arr">返回顶部</span></a> 
+	<div id="container">
+<!--轮播图开始-->
+<div class="site_focus" style="padding-top: 0px;" id="mod_txv_focus">
+
+{maccms:vod num=7 type={page:id} order=desc by=level level=4}
+
+{if-A:[vod:num] = 1}
+
+    	<div class="focus_inner">
+
+        	<a href="[vod:link]" target="_blank" class="focus_img" style="background-image: url([vod:picslide]); {if-B:not isN("[vod:color]")}background-color:#[vod:color];{endif-B}"></a>
+
+            <div class="focus_control">
+
+
+                <div class="focus_thumbnails">
+
+                    <div class="focus_thumbnails_inner" id="mod_txv_focus_nav">
+
+                        <ul class="focus_thumbnails_list cf">
+
+                            <li style="display: list-item;" title="《[vod:name]》[vod:content len=14]..." img="[vod:picslide]" class="current" num="[vod:num]" color="[vod:color]" href="[vod:link]">
+
+{else-A}
+
+                            <li style="display: list-item;" title="《[vod:name]》高清热播[vod:content len=14]..." img="[vod:picslide]" num="[vod:num]" color="[vod:color]" href="[vod:link]">
+
+{endif-A}
+
+                                <a href="[vod:link]" class="link_thumbnails" target="_blank">
+
+                                    <img src="[vod:pic]" onerror="this.onerror=null;this.src='{maccms:path_tpl}images/nomovie.jpg';" ></a>
+
+                            </li>
+
+{/maccms:vod}
+
+                        </ul>
+
+                    </div>
+
+                    <a href="javascript:;" class="btn_prev" id="focus_smaillPic_prev" title="上一组" hidefocus="true"><i class="ico_prev"></i><span class="btn_inner">上一组</span></a>
+
+                   <a href="javascript:;" class="btn_next" id="focus_smaillPic_next" title="下一组" hidefocus="true"><span class="btn_inner">下一组</span><i class="ico_next"></i></a>
+
+               </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+<script type="text/javascript">
+
+        (function() {
+
+            var v280 = {};
+
+            v280.Focus = {
+
+                focusNum: $("#mod_txv_focus_nav li").length,
+
+                currentNum: 0,
+
+                setFocus: function() {
+
+                    var imgObj = $(".focus_img");
+
+                    var liObj = $("#mod_txv_focus_nav li").get(this.currentNum);
+
+                    imgObj.stop().animate({ opacity: '0.4' }, 500, function() {
+
+                        $("#mod_txv_focus_title").html($(liObj).attr("title"));
+
+                        imgObj.css({ "background-image": "url(" + $(liObj).attr('img') + ")" });
+
+                        imgObj.attr("href",$(liObj).attr('href'));
+
+                        var color = $(liObj).attr('color');
+
+                        if(color != "")
+
+                           imgObj.css("background-color","#"+color);
+
+                        imgObj.animate({ opacity: '1' }, 500);
+
+                    });
+
+                    //$("#mod_txv_focus_nav li").removeClass("current");
+
+                    //$(liObj).addClass("current");
+
+					this.show();
+
+                },
+
+				show:function(){
+
+					var liObj = $("#mod_txv_focus_nav li").get(this.currentNum);
+
+                    $("#mod_txv_focus_nav li").removeClass("current");
+
+                    $(liObj).addClass("current");
+
+					
+
+					var start = 0,end = this.focusNum;
+
+					//总列表数小于七条时退出
+
+					if(this.focusNum <= 7) return;
+
+					
+
+					if(this.currentNum >= 7){
+
+						if(this.currentNum % 7 == 0)
+
+							start = this.currentNum;
+
+						else
+
+							start = parseInt(this.currentNum / 7) * 7;
+
+					}
+
+						
+
+					if(start + 7 > end)
+
+						start = end - 7;
+
+					else
+
+						end = start + 7;
+
+					
+
+					$("#mod_txv_focus_nav li").css("display","none");
+
+					for(var i = start; i < end ; i++)
+
+					{
+
+						liObj = $("#mod_txv_focus_nav li").get(i);
+
+						$(liObj).css("display","list-item");
+
+					}
+
+				},
+
+                Prev: function() {
+
+                    this.currentNum--;
+
+                    if (this.currentNum < 0)
+
+                        this.currentNum = this.focusNum - 1;
+
+                    this.setFocus();
+
+
+
+                },
+
+                Next: function() {
+
+                    this.currentNum++;
+
+                    if (this.currentNum >= this.focusNum)
+
+                        this.currentNum = 0;
+
+                    this.setFocus();
+
+                },
+
+                Auto: function() {
+
+                    window.setInterval(function() { v280.Focus.Next(); }, 5000);
+
+                }
+
+            };
+
+            v280.Focus.Auto();
+
+            $("#focus_smaillPic_prev").click(function() { v280.Focus.Prev() });
+
+            $("#focus_smaillPic_next").click(function() { v280.Focus.Next() });
+
+			$("#mod_txv_focus_nav li").mouseover(function(){
+
+				v280.Focus.currentNum = parseInt($(this).attr("num")) - 1;
+
+				v280.Focus.setFocus();
+
+			});
+
+        })();
+
+    </script>
+	    <!-- section_container -->
+	    <div class="section_container">
+	      <!-- movie section -->
+
+		  	<!-- homepage_top -->
+	      <div class="sort_nav clearfix">
+  <h3 class="sort_nav_tit"><a uigs="in_home_cartoon_left_more" href="/?m=vod-type-id-{page:id}.html" target="_blank">{if-A:{page:id}=1}<i class="ico_sort_nav_movie"></i>{elseif-A:{page:id}=2}<i class="ico_sort_nav_drama"></i>{else-A}{endif-A}{page:name}热播</a></h3>
+  <div class="sort_nav_bx">
+
+    <div class="sort_nav_bar">|</div>
+    <a uigs="in_home_cartoon_left_more" href="/?m=vod-type-id-{page:id}.html" target="_blank" class="sort_nav_more"><i></i>更多</a>
+  </div>
+</div>
+
+<!--zly-->
+ 
+	      <div class="homepage_top_bx">
+	        <div class="column_rgt">
+	        	
+
+
+<div class="homepage_top_aside">
+	<h3 class="homepage_top_aside_tit"><span>来自<em class="stress">2158</em>个站点</span>{page:name}更新表</h3>
+	<ul class="homepage_top_aside_lst">
+		{maccms:vod num=9 by=time type={page:id} order=desc}
+	<li>
+			<a uigs="in_home_topright" href="[vod:link]" title=" [vod:name]" target="_blank" class="homepage_top_aside_lst_tab">
+				<span class="homepage_top_aside_lst_tab_rgt">[vod:time]</span>
+				<span class="homepage_top_aside_lst_tab_lft">{if-A:[vod:num]=1}<i class="ico_tengxun"></i>{elseif-A:[vod:num]=2}<i class="ico_leshi"></i>{elseif-A:[vod:num]=3}<i class="ico_aiqiyi"></i>{elseif-A:[vod:num]=4}<i class="ico_sohu"></i>{elseif-A:[vod:num]=5}<i class="ico_sohu"></i>{elseif-A:[vod:num]=6}<i class="ico_pptv"></i>{elseif-A:[vod:num]=7}<i class="ico_mangguo"></i>{elseif-A:[vod:num]=8}<i class="ico_tengxun"></i>{elseif-A:[vod:num]=9}<i class="ico_aiqiyi"></i>{else-A}{endif-A}<span class="homepage_top_aside_lst_tab_lft_txt"> [vod:name len=5]</span></span>
+			</a>
+		</li>
+			{/maccms:vod}
+	</ul>
+</div>
+<!--zly--> 
+	        </div>
+	        <div class="column_lft">
+	          <div class="recommend_bx">
+
+<ul class="recommend_lst recommend_lst_v1">
+	
+	 {maccms:vod type={page:id} num=5 order=desc by=hits start=1}
+	<li id="li_6" onmouseover="$(this).addClass('cur')"
+	onmouseout="$(this).removeClass('cur')"><a
+	uigs="out_home_smallvideo_null_false_[vod:name]"
+	href="[vod:link]"
+	title="[vod:name] "
+	target="_blank" class="recommend_lst_thumb"> <img
+		src="[vod:pic]" onerror="this.onerror=null;this.src='{maccms:path_tpl}images/nomovie.jpg';" 
+		title="[vod:name] "
+		alt="[vod:name] "
+		style="margin-left:-0px;margin-top:-0px;width:175px;height:96px" />
+		<div class="recommend_lst_thumb_hv"></div>
+		<div class="play_hv"></div> </a>
+	<div class="recommend_lst_txt">
+		<a
+			uigs="out_home_smallvideo_null_false_[vod:name]"
+			href="[vod:link]"
+			title="[vod:name] "
+			target="_blank">[vod:name]
+		</a>
+	</div>
+</li>
+	
+{/maccms:vod}	
+	
+</ul>
+<ul class="recommend_lst recommend_lst_v1">
+	
+		 {maccms:vod type={page:id} num=5 order=desc by=hits start=6}
+	<li id="li_6" onmouseover="$(this).addClass('cur')"
+	onmouseout="$(this).removeClass('cur')"><a
+	uigs="out_home_smallvideo_null_false_[vod:name]"
+	href="[vod:link]"
+	title="[vod:name] "
+	target="_blank" class="recommend_lst_thumb"> <img
+		src="[vod:pic]" onerror="this.onerror=null;this.src='{maccms:path_tpl}images/nomovie.jpg';" 
+		title="[vod:name] "
+		alt="[vod:name] "
+		style="margin-left:-0px;margin-top:-0px;width:175px;height:96px" />
+		<div class="recommend_lst_thumb_hv"></div>
+		<div class="play_hv"></div> </a>
+	<div class="recommend_lst_txt">
+		<a
+			uigs="out_home_smallvideo_null_false_[vod:name]"
+			href="[vod:link]"
+			title="[vod:name] "
+			target="_blank">[vod:name]
+		</a>
+	</div>
+</li>
+	
+{/maccms:vod}
+	
+</ul>
+<ul class="recommend_lst recommend_lst_v1">
+	
+		 {maccms:vod type={page:id} num=5 order=desc by=hits start=12}
+	<li id="li_6" onmouseover="$(this).addClass('cur')"
+	onmouseout="$(this).removeClass('cur')"><a
+	uigs="out_home_smallvideo_null_false_[vod:name]"
+	href="[vod:link]"
+	title="[vod:name] "
+	target="_blank" class="recommend_lst_thumb"> <img
+		src="[vod:pic]" onerror="this.onerror=null;this.src='{maccms:path_tpl}images/nomovie.jpg';" 
+		title="[vod:name] "
+		alt="[vod:name] "
+		style="margin-left:-0px;margin-top:-0px;width:175px;height:96px" />
+		<div class="recommend_lst_thumb_hv"></div>
+		<div class="play_hv"></div> </a>
+	<div class="recommend_lst_txt">
+		<a
+			uigs="out_home_smallvideo_null_false_[vod:name]"
+			href="[vod:link]"
+			title="[vod:name] "
+			target="_blank">[vod:name]
+		</a>
+	</div>
+</li>
+	
+{/maccms:vod}
+</ul>
+<!--zly--> 
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	    <!-- //homepage_top -->
+   {maccms:matrix parent={page:id} table=vod} 
+	    <!-- section_container -->
+	    <div class="section_container">
+	      <!-- movie section -->
+	      <div class="section">
+	      	<div class="column_rgt">
+  		
+<div class="section_aside">
+	<div class="section_aside_tit">
+		<h3>[matrix:name]热播榜</h3>
+	</div>
+	<div class="section_aside_bx">
+		<ul class="section_aside_lst">
+			 {maccms:vod type=[matrix:id] num=8 order=desc by=hits}
+		<li><a uigs="in_home_movie_right_box" href="[vod:link]" target="_blank" title="[vod:name]" class="section_aside_lst_tab"> <span
+					class="section_aside_lst_tab_rgt"><em class="stress">[vod:score]</em>
+				</span> <span class="section_aside_lst_tab_lft"><span
+						class="section_aside_lst_num{if-A:[vod:num]<4}  section_aside_lst_topnum{endif-A}">[vod:num]</span><span
+						class="section_aside_lst_txt">[vod:name]</span>
+				</span> </a></li>
+		
+		{/maccms:vod}
+		</ul>
+
+</div></div>
+<!--zly--> 
+	      	</div>
+	      	<div class="column_lft">
+	      		
+
+
+<!-- sort_nav -->
+
+<div class="sort_nav clearfix">
+  <h3 class="sort_nav_tit"><a uigs="in_home_movie_left_more" href="[matrix:link]" target="_blank">{if-A:{page:id}=1}<i class="ico_sort_nav_movie"></i>{elseif-A:{page:id}=2}<i class="ico_sort_nav_drama"></i>{else-A}{endif-A}[matrix:name]</a></h3>
+  <div class="sort_nav_bx">
+    <ul class="sort_nav_lst" id="movie_tag_div">
+    
+      <li class='cur'><a uigs="none_home_movie_left_tag" href="javascript:void(0)" onMouseOver="clearTimeout(movieTimer);movieTimer=setTimeout(function(){changeMovieTag(0);},50)" onMouseout="clearTimeout(movieTimer)">最热</a></li>
+
+    </ul>
+    <div class="sort_nav_bar">|</div>
+    <a uigs="in_home_movie_left_more" href="[matrix:link]" target="_blank" class="sort_nav_more"><i></i>更多</a>
+  </div>
+</div>
+<!-- //sort_nav -->
+<!-- sort_lst -->
+<div class="sort_lst_bx" id="movie_content_div">
+
+  <ul class="sort_lst" style="">
+      {maccms:vod num=5 type=[matrix:id] by=hits order=desc start=2}
+    <li onmouseover="$(this).addClass('cur')" onmouseout="$(this).removeClass('cur')">
+      <a uigs="in_home_movie_left_img" href="[vod:link]" target="_blank" title="[vod:name]" class="sort_lst_thumb">
+        <img src="[vod:pic]" onerror="this.onerror=null;this.src='{maccms:path_tpl}images/nomovie.jpg';" style="margin-left:-0px;margin-top:-0px;width:175px;height:233px" title="[vod:name]" alt="[vod:name]">
+        <div class="sort_lst_thumb_hv"></div>
+        <div class="play_hv2"></div>
+        <div class="sort_lst_thumb_txt_bg"></div>
+        <div class="sort_lst_thumb_txt_rgt"><em class="stress">[vod:score]</em></div>
+        <div class="sort_lst_thumb_txt_lft"><i class="ico_play_time"></i>[vod:duration]分钟</div>
+      	
+      </a>
+      <div class="sort_lst_tit"><a uigs="in_home_movie_left_title" href="[vod:link]" target="_blank" title="[vod:name]">[vod:name]</a></div>
+      <p class="sort_lst_txt">[vod:contenttext len=10]</p>
+    </li>
+   {/maccms:vod}
+  </ul>
+
+ 
+</div>
+<!-- //sort_lst -->
+<!--zly--> 
+	      	</div>
+		  </div>
+{/maccms:matrix}		  
+
+
+<div class="section_ad">
+  <div class="column_rgt">
+    <a uigs="adv_home_movie_bottom_left" href="#" target="_blank" title="搜狗游戏世界">
+      <img width="265" height="90" alt="搜狗游戏世界" title="搜狗游戏世界" src="http://img03.sogoucdn.com/app/a/07/f4d3518c7cbdc72a1222fe96568171e0">
+    </a>
+  </div>
+  
+  <div class="column_lft">
+    <script src="{maccms:path_ads}960-90.js"></script>
+  </div>
+</div>
+<!--zly--> 
+
+		  </div>
+
+      	</div>
+	</div>
+	<div id="footer">
+    <div class="footer_container">
+      <h3 class="footer_tit">合作站点</h3>
+      <ul class="footer_partner_lst">
+        <li>
+          <a class="partner_tab" href="http://tv.sohu.com/" target="_blank">搜狐视频</a>
+        </li>
+        <li>
+          <a class="partner_tab2" href="http://www.kankan.com/" target="_blank">响巢看看</a>
+        </li>
+        <li>
+          <a class="partner_tab3" href="http://www.letv.com/" target="_blank">乐视</a>
+        </li>
+        <li>
+          <a class="partner_tab4" href="http://www.iqiyi.com/" target="_blank">爱奇艺</a>
+        </li>
+        <li>
+          <a class="partner_tab5" href="http://www.m1938.com/" target="_blank">m1938模板商城</a>
+        </li>
+        <li>
+          <a class="partner_tab6" href="http://www.tudou.com/" target="_blank">土豆网</a>
+        </li>
+        <li>
+          <a class="partner_tab7" href="http://www.pptv.com/" target="_blank">PPTV</a>
+        </li>
+        <li>
+          <a class="partner_tab8" href="http://www.1905.com/" target="_blank">电影网</a>
+        </li>
+        <li>
+          <a class="partner_tab9" href="http://www.M1938.com/" target="_blank">m1938工作室</a>
+        </li>
+        <li>
+          <a class="partner_tab10" href="http://www.56.com/" target="_blank">我乐</a>
+        </li>
+        <li>
+          <a class="partner_tab11" href="http://v.qq.com/" target="_blank">腾讯视频</a>
+        </li>
+        <li>
+          <a class="partner_tab12" href="http://www.ku6.com/" target="_blank">酷6网</a>
+        </li>
+        <li>
+          <a class="partner_tab13" href="http://www.baofeng.com/" target="_blank">暴风影音</a>
+        </li>
+        <li>
+          <a class="partner_tab14" href="http://movie.douban.com/" target="_blank">豆瓣</a>
+        </li>
+      </ul>
+      <div id="protocol"><a href="http://www.m1938.com" target="_blank">m1938工作室仿制模板 - m1938模板商城</a><sup>New!</sup></div>
+{maccms:foot}
+    </div>
+  </div>
+</div>
+
+<script language='JavaScript'>
+var uigs_para={"uigs_productid":"video","pagetype":"home"};
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/74-{src}-1.html?74-{src}-{num}', mac_name='圣诞树4',mac_from='npykvip',mac_server='0',mac_note='',mac_url=unescape('http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTgxMzMxNjAxNg%3D%3D.html');

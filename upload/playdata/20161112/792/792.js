@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/792-{src}-1.html?792-{src}-{num}', mac_name='道士出山3外星古墓[下]',mac_from='npiqyvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrkhr33w.html');

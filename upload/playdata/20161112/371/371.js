@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/371-{src}-1.html?371-{src}-{num}', mac_name='白幽灵传奇之绝命逃亡',mac_from='qiyi',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrny8ddo.html');

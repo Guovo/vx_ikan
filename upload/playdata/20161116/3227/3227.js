@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3227-{src}-1.html?3227-{src}-{num}', mac_name='夜走鬼城',mac_from='youku',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTc4NTc4OTIzMg%3D%3D.html');

@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="renderer" content="webkit">
+<title>全站栏目导航 - {maccms:name}</title>
+{maccms:include}
+</head>
+<body class="subnav">
+<aside style="display: block;">
+  <header><a href="/"><img src="{maccms:path_tpl}img_m/back.png"></a> <a href="/index.php?m=label-nav.html" class="sx"> <img src="{maccms:path_tpl}img_m/sx.png" width="30" style="padding-top:6px"></a> </header>
+  <section>
+    <div style="display: block;">
+      <h2>一级分类：</h2>
+      {maccms:menu type=parent order=asc table=vod} <a href="[menu:link]">[menu:name]</a> {/maccms:menu} </div>
+    <div style="display: block;">
+      <h2>二级分类：</h2>
+      {maccms:menu type=child order=asc table=vod} <a href="[menu:link]">[menu:name]</a> {/maccms:menu} </div>
+    <div style="display: block;">
+      <h2>文章分类：</h2>
+      {maccms:menu type=parent order=asc table=art}<a href="[menu:link]">[menu:name]</a> {/maccms:menu} </div>
+  </section>
+</aside>
+</body>
+</html>

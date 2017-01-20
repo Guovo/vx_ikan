@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1357-{src}-1.html?1357-{src}-{num}', mac_name='北京爱情故事',mac_from='qiyi$$$tudou',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrh59e04.html%24%24%241%24http%3A%2F%2Fwww.tudou.com%2Falbumplay%2FZ9a0v4Y9Gxs%2FemcLh_hT4DA.html');

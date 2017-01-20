@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/941-{src}-1.html?941-{src}-{num}', mac_name='傲慢与偏见',mac_from='npiqyvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrhxxnck.html');

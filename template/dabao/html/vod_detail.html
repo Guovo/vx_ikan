@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
+<title>[vod:name]-[vod:remarks]免费在线观看 点播 免费看 免系下载 免百度资源 免费电影 免费视频 花园影视</title>
+<meta name="Keywords" content="[vod:name]免费在线观看 爱奇艺会员账号 爱奇艺会员共享 优酷会员账号共享 qq好莱坞会员 腾讯视频会员 " />
+<meta property="og:type" content="videolist"/>
+<meta property="og:title" content="[vod:name]"/>
+<meta property="og:image" content="[vod:pic]"/>
+<meta property="og:video:actor" content="[vod:starringlink]"/>
+<meta property="og:video:director" content="[vod:directedlink]"/>
+<meta property="og:video:area" content="[vod:area]"/>
+ <meta property="og:video:class" content="[vod:typename]"/>
+<meta property="og:video:language" content="[vod:lang]"/>
+<meta name="og:description" content="[vod:content]花园影视,免看广告,每天24点同步更新,各大视频网站免VIP会员观看！" />
+
+<link href="{maccms:path_tpl}css/style.css" rel="stylesheet">
+
+{maccms:include}
+
+[vod:history]
+
+<!--百度统计-->
+
+</head>
+
+<body>
+
+{maccms:head}
+
+<div class="main">
+
+	<h2 class="title">[vod:textlink]  </h2>
+
+	<div class="ct mb clearfix">
+
+		<div class="ct-l">
+
+			<img class="lazy" data-original="[vod:pic]" src="{maccms:path_tpl}Images/load.gif"  title="[vod:name]" alt="[vod:name]海报">
+
+	    </div>
+
+	    <div class="ct-c">
+<!--电脑版广告位-->
+	    	<dl>
+
+          <dt class="name">[vod:name]<span class="bz">[vod:remarks]</span><span style="display:none"><span id="hit">[vod:hits] </span></span></dt>
+
+	    		
+
+	    		<dt><span>主演：</span><a href="[vod:starringlink]">[vod:starringlink]</a> </dt>
+
+	    		<dt><span>类型：</span><a href="[vod:typelink]">[vod:typename]</a> </dt>
+
+	    		<dd><span>导演：</span><a href="[vod:directedlink]">[vod:directedlink]</a> </dt>
+
+	    		<dd><span>地区：</span>[vod:area]</dd>
+
+	    		<dd><span>年份：</span>[vod:year]</dd>
+
+	    		<dd><span>语言：</span>[vod:lang]</dd>
+
+	    	</dl>
+
+        <div name="ee" class="ee"><span class="js">介绍：</span>欢迎在线观看由[vod:starringlink]等主演的[vod:typename]《[vod:name]》，花园影视第一时间为你提供《[vod:name]》。剧情简介:[vod:content] <br>如果你喜欢《[vod:name]》请把它分享给的朋友，有您们的支持我们会做的更好。祝你观片愉快！花园影视，高清电影在线观看，无需迅雷下载，真正的免费电影网！</div>
+
+
+
+
+	    </div>
+
+	    <div class="ct-r">
+<!--电脑版广告位-->
+
+</div>
+
+	</div>
+
+
+<div class="profile_opr">
+<center>
+	<span>↓↓↓由于工信部严打↓↓↓<span style="color:#E53333;"><strong>近期经常变更域名</strong></span>↓↓↓请加微信1926337827↓↓↓以免跟丢↓↓↓</span><br>
+				 <img style="max-width:100%;overflow:hidden;" src="/template/dabao/Images/wxpm.png" ></center>
+	</div>
+
+
+
+
+  <div class="tab-title tab mb clearfix">
+
+    <ul>
+
+    	<li id="tab1" class="on" onClick="setTab('tab','stab',1,3)">播放列表</li>
+
+    	<li id="tab2" onClick="setTab('tab','stab',2,3)">内容介绍</li>
+
+    	<li id="tab3" onClick="setTab('tab','stab',3,3)">相关影片</li>
+  
+    </ul>
+
+  </div>
+
+  <!--/播放地址-->
+
+  <div id="stab1" class="tab-down mb clearfix">
+
+	<div class="playfrom tab8 clearfix">
+
+    <ul>
+
+     {maccms:play}   
+
+    <li id="tab8[play:num]" onClick="setTab('tab8','stab8',[play:num],[play:count])" {if-A:"[play:num]"= "1"} class="on" {endif-A}><i class="playerico ico-Azhan"></i> [play:show]</li>
+
+     {/maccms:play}   
+
+    </ul>
+
+  </div>
+
+
+
+{maccms:play}
+
+  <div id="stab8[play:num]" class="playlist clearfix" {if-A:"[play:num]"> "1"} style="display:none" {endif-A} >
+
+ 	  	<div class="h1 clearfix">
+
+  		<p class="intro"><font color="#f06000">[play:show]</font>[play:tip]=>><span style="color:#E53333;">为避免域名变动，请加微信:1926337827</span></p>
+
+  		<p class="jj"><span id="vlink_[play:num]_s1"><em onClick="Order(1,'vlink_[play:num]',[play:num])">倒序↓</em></span><span id="vlink_[play:num]_s2"><em onClick="Order(0,'vlink_[play:num]',[play:num])" class="over">顺序↑</em></span></p>
+
+  	</div>
+
+	  <div id="vlink_[play:num]" class="videourl clearfix"><ul>
+
+	  {maccms:url order=asc}
+
+	  <li><a title='[url:name]' href='[url:link]' target="_self">[url:name]</a></li>
+
+	  {/maccms:url}
+
+	  </ul></div>
+
+  </div>
+
+    {/maccms:play} 
+
+  </div>
+
+
+
+
+
+
+<!--/手机内容页-->
+
+  <div id="stab2" class="tab-down mb clearfix" style="display:none;">
+
+  <div class="tab-jq">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[vod:content]</div>
+
+  </div>
+
+  <div id="stab3" class="tab-down mb clearfix" style="display:none;">
+
+    <div class="index-area clearfix">
+
+    <ul>
+
+	<!--/相关内容-->
+
+     {maccms:vod num=12 order=desc by=level type={maccms:curvodtypeid}}    
+
+	    <li class="p1 m1"><a class="link-hover" href="http://v.z-boss.cn[vod:link]" title="[vod:name]"><img src="[vod:pic]" alt="[vod:name]"><span class="video-bg"></span><span class="lzbz"><p class="name">[vod:name]</p><p class="actor">[vod:starring]</p><p class="actor">[vod:typename]</p><p class="actor">[vod:year]/[vod:area]</p></span><p class="other"><i>[vod:remarks]</i></p></a>
+
+    </li>
+
+    {/maccms:vod}
+
+    </ul>
+
+    </div>
+
+  </div>
+
+  <div class="index-area clearfix">
+
+    <h2 class="title index-color">猜你喜欢</h2>
+
+    <ul>
+
+    {maccms:vod num=12 order=desc by=hits type={maccms:curvodtypeid} } 
+
+    <li class="p1 m1"><a class="link-hover" href="http://v.z-boss.cn[vod:link]" title="[vod:name]"><img class="lazy" data-original="[vod:pic]" src="{maccms:path_tpl}Images/load.gif" alt="[vod:name]"><span class="video-bg"></span><span class="lzbz"><p class="name">[vod:name]</p><p class="actor">[vod:starring]</p><p class="actor">[vod:typename]</p><p class="actor">[vod:year]/[vod:area]</p></span><p class="other"><i>[vod:remarks]</i></p></a>
+
+    </li>
+
+    {/maccms:vod}
+
+    </ul>
+
+    </div>
+
+
+
+
+
+
+<!--百度统计-->
+
+
+<!--百度自动提交连接-->
+
+
+
+
+<!--/底部-->
+
+{maccms:foot}
+
+</body>
+
+</html>
+

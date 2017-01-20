@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/770-{src}-1.html?770-{src}-{num}', mac_name='林中小屋',mac_from='npiqyvip$$$tudou',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrh86uwk.html%24%24%241%24http%3A%2F%2Fwww.tudou.com%2Falbumplay%2FuGV6JxPF_Lg%2FuVCdO9mJUiI.html');

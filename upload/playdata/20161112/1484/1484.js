@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1484-{src}-1.html?1484-{src}-{num}', mac_name='超能太监',mac_from='qiyi$$$qq',mac_server='0$$$',mac_note='$$$',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrl6ssjo.html%24%24%241%24http%3A%2F%2Fv.qq.com%2Fx%2Fcover%2Fvoclv0kkxex1yb3.html');

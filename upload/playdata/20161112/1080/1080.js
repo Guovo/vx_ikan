@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/1080-{src}-1.html?1080-{src}-{num}', mac_name='僵尸皇帝',mac_from='npiqyvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr9k85so.html');

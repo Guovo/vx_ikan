@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3313-{src}-1.html?3313-{src}-{num}', mac_name='《失控》国际特警特辑 崔胜铉TOP热血狂飙搏命',mac_from='qq',mac_server='0',mac_note='',mac_url=unescape('1%24o0342goofud');

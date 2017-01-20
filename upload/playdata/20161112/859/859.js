@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/859-{src}-1.html?859-{src}-{num}', mac_name='夺宝奇兵4：水晶骨头王国',mac_from='npiqyvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrnbdd6w.html');

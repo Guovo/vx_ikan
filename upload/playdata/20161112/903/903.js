@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/903-{src}-1.html?903-{src}-{num}', mac_name='独立日：卷土重来',mac_from='npiqyvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrm1mq2o.html');

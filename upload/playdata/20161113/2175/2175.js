@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/2175-{src}-1.html?2175-{src}-{num}', mac_name='彭城风云',mac_from='npykvip',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fv.youku.com%2Fv_show%2Fid_XMTY1NjE2MzcxNg%3D%3D.html');

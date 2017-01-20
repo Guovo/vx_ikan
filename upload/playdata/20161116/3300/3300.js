@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/3300-{src}-1.html?3300-{src}-{num}', mac_name='名侦探洪吉童:消失的村庄',mac_from='qq',mac_server='0',mac_note='',mac_url=unescape('1%24http%3A%2F%2Fv.qq.com%2Fx%2Fcover%2Fftzqg0htmeuqjdc.html');

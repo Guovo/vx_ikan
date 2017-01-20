@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>热门动漫_最好看的动漫排行_最好看的动漫动画片大全- {maccms:name}</title><meta name="keywords" content="热门动漫,时下最好看的动漫,最好看的动画片" /><meta name="description" content="{maccms:name}为大家推荐时下最好看的动漫动画片，{maccms:description}" />
+{maccms:include}
+<!--百度统计-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e61721e7ccb9f42aedcf6ff7f8103cd8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<!--顶部-->
+{maccms:head}
+<!--顶部 END-->
+ 
+ 
+<!--顶部 END-->
+<div class="clear"></div>
+<div class="rank_container">
+    <div class="rank_wrapper">
+        <div class="rank_panel">
+            <h2>
+                <b class="rqb">人气榜</b>
+                <span class="date_tab">
+                    <a href="javascript:void(0)" class="hover">周</a>
+                    <a href="javascript:void(0)">月</a>
+                    <a href="javascript:void(0)">总</a>
+                </span>
+            </h2>
+            <div class="ranklist">
+                <ul>                
+                    {maccms:vod num=1 by=weekhits order=desc}     	
+                    <li class="top_one">
+                        <i>1</i>
+                        <a href="[vod:link]" class="pic" target="_blank"><img alt="[vod:name len=9]" title="[vod:name len=9]" src="[vod:pic]"></a>
+                        <span class="info">
+                            <a alt="[vod:name len=9]" title="[vod:name len=9]" href="[vod:link]" class="pname w150" target="_blank">[vod:name len=9]</a>
+                            
+                             	<label class="pt">普通</label>
+                                    
+                            <a href="[vod:link]" target="_blank"><span class="intro">[vod:remarks]</span></a>
+                            <span class="hot">人气：<b>[vod:hits]</b></span>
+                        </span>
+                    </li>
+					{/maccms:vod}
+ 
+         	         {maccms:vod num=9 by=weekhits order=desc start=2}                 	
+                    <li class="even"><i class="top">[vod:numjoin]</i><a href="[vod:link]" class="tit" target="_blank">[vod:name len=9]</a><span class="count">[vod:hits]</span></li>
+					{/maccms:vod}
+         	                         	
+                    
+         	         
+                </ul>
+            </div>
+            <div class="ranklist none">
+                <ul>
+                         	
+                    {maccms:vod num=1 by=monthhits order=desc}     	
+                    <li class="top_one">
+                        <i>1</i>
+                        <a href="[vod:link]" class="pic" target="_blank"><img alt="[vod:name len=9]" title="[vod:name len=9]" src="[vod:pic]"></a>
+                        <span class="info">
+                            <a alt="[vod:name len=9]" title="[vod:name len=9]" href="[vod:link]" class="pname w150" target="_blank">[vod:name len=9]</a>
+                            
+                             	<label class="pt">普通</label>
+                                    
+                            <a href="[vod:link]" target="_blank"><span class="intro">[vod:remarks]</span></a>
+                            <span class="hot">人气：<b>[vod:hits]</b></span>
+                        </span>
+                    </li>
+					{/maccms:vod}
+ 
+         	         {maccms:vod num=9 by=monthhits order=desc start=2}                 	
+                    <li class="even"><i class="top">[vod:numjoin]</i><a href="[vod:link]" class="tit" target="_blank">[vod:name len=9]</a><span class="count">[vod:hits]</span></li>
+					{/maccms:vod}
+         	         
+                </ul>
+            </div>
+            <div class="ranklist none">
+                <ul>
+                          	
+                     {maccms:vod num=1 by=hits order=desc}     	
+                    <li class="top_one">
+                        <i>1</i>
+                        <a href="[vod:link]" class="pic" target="_blank"><img alt="[vod:name len=9]" title="[vod:name len=9]" src="[vod:pic]"></a>
+                        <span class="info">
+                            <a alt="[vod:name len=9]" title="[vod:name len=9]" href="[vod:link]" class="pname w150" target="_blank">[vod:name len=9]</a>
+                            
+                             	<label class="pt">普通</label>
+                                    
+                            <a href="[vod:link]" target="_blank"><span class="intro">[vod:remarks]</span></a>
+                            <span class="hot">人气：<b>[vod:hits]</b></span>
+                        </span>
+                    </li>
+					{/maccms:vod}
+ 
+         	         {maccms:vod num=9 by=hits order=desc start=2}                 	
+                    <li class="even"><i class="top">[vod:numjoin]</i><a href="[vod:link]" class="tit" target="_blank">[vod:name len=9]</a><span class="count">[vod:hits]</span></li>
+					{/maccms:vod}
+         	         
+                </ul>
+            </div>
+        </div>
+        <div class="rank_panel">
+            <h2>
+                <b class="ypb">日漫月票榜</b>
+ 
+            </h2>
+            <div class="ranklist">
+                <ul>
+                          	
+                     {maccms:vod num=1 type=16 order=desc}     	
+                    <li class="top_one">
+                        <i>1</i>
+                        <a href="[vod:link]" class="pic" target="_blank"><img alt="[vod:name len=9]" title="[vod:name len=9]" src="[vod:pic]"></a>
+                        <span class="info">
+                            <a alt="[vod:name len=9]" title="[vod:name len=9]" href="[vod:link]" class="pname w150" target="_blank">[vod:name len=9]</a>
+                            
+                             	<label class="pt">普通</label>
+                                    
+                            <a href="[vod:link]" target="_blank"><span class="intro">[vod:remarks]</span></a>
+                            <span class="hot">人气：<b>[vod:hits]</b></span>
+                        </span>
+                    </li>
+					{/maccms:vod}
+ 
+         	         {maccms:vod num=9 type=16 order=desc start=2}                 	
+                    <li class="even"><i class="top">[vod:numjoin]</i><a href="[vod:link]" class="tit" target="_blank">[vod:name len=9]</a><span class="count">[vod:hits]</span></li>
+					{/maccms:vod}
+         	         
+                </ul>
+            </div>
+ 
+        </div>
+        <div class="rank_panel nomg">
+            <h2>
+                <b class="scb">国产收藏榜</b>
+ 
+            </h2>
+        
+           
+            <div class="ranklist none" style="display: block;">
+                <ul>
+                          	
+                        {maccms:vod num=1 type=17 order=desc}     	
+                    <li class="top_one">
+                        <i>1</i>
+                        <a href="[vod:link]" class="pic" target="_blank"><img alt="[vod:name len=9]" title="[vod:name len=9]" src="[vod:pic]"></a>
+                        <span class="info">
+                            <a alt="[vod:name len=9]" title="[vod:name len=9]" href="[vod:link]" class="pname w150" target="_blank">[vod:name len=9]</a>
+                            
+                             	<label class="pt">普通</label>
+                                    
+                            <a href="[vod:link]" target="_blank"><span class="intro">[vod:remarks]</span></a>
+                            <span class="hot">人气：<b>[vod:hits]</b></span>
+                        </span>
+                    </li>
+					{/maccms:vod}
+ 
+         	         {maccms:vod num=9 type=17 order=desc start=2}                 	
+                    <li class="even"><i class="top">[vod:numjoin]</i><a href="[vod:link]" class="tit" target="_blank">[vod:name len=9]</a><span class="count">[vod:hits]</span></li>
+					{/maccms:vod}
+         	         
+                </ul>
+            </div>
+        </div>
+ <div class="clear"></div>
+        <div class="rank_panel">
+            <h2>
+                <b class="snb">少年榜</b>
+         
+            </h2>
+            <div class="ranklist">
+                <ul>
+                          	
+                         {maccms:vod num=1 type=20 order=desc}     	
+                    <li class="top_one">
+                        <i>1</i>
+                        <a href="[vod:link]" class="pic" target="_blank"><img alt="[vod:name len=9]" title="[vod:name len=9]" src="[vod:pic]"></a>
+                        <span class="info">
+                            <a alt="[vod:name len=9]" title="[vod:name len=9]" href="[vod:link]" class="pname w150" target="_blank">[vod:name len=9]</a>
+                            
+                             	<label class="pt">普通</label>
+                                    
+                            <a href="[vod:link]" target="_blank"><span class="intro">[vod:remarks]</span></a>
+                            <span class="hot">人气：<b>[vod:hits]</b></span>
+                        </span>
+                    </li>
+					{/maccms:vod}
+ 
+         	         {maccms:vod num=9 type=20 order=desc start=2}                 	
+                    <li class="even"><i class="top">[vod:numjoin]</i><a href="[vod:link]" class="tit" target="_blank">[vod:name len=9]</a><span class="count">[vod:hits]</span></li>
+					{/maccms:vod}
+         	         
+                </ul>
+            </div>
+ 
+        </div>
+        <div class="rank_panel">
+            <h2>
+                <b class="snvb">少女榜</b>
+  
+            </h2>
+            <div class="ranklist">
+                <ul>
+                          	
+                         {maccms:vod num=1 type=4 order=desc}     	
+                    <li class="top_one">
+                        <i>1</i>
+                        <a href="[vod:link]" class="pic" target="_blank"><img alt="[vod:name len=9]" title="[vod:name len=9]" src="[vod:pic]"></a>
+                        <span class="info">
+                            <a alt="[vod:name len=9]" title="[vod:name len=9]" href="[vod:link]" class="pname w150" target="_blank">[vod:name len=9]</a>
+                            
+                             	<label class="pt">普通</label>
+                                    
+                            <a href="[vod:link]" target="_blank"><span class="intro">[vod:remarks]</span></a>
+                            <span class="hot">人气：<b>[vod:hits]</b></span>
+                        </span>
+                    </li>
+					{/maccms:vod}
+ 
+         	         {maccms:vod num=9 type=4 order=desc start=2}                 	
+                    <li class="even"><i class="top">[vod:numjoin]</i><a href="[vod:link]" class="tit" target="_blank">[vod:name len=9]</a><span class="count">[vod:hits]</span></li>
+					{/maccms:vod}
+         	         
+                </ul>
+            </div>
+           
+            
+        </div>
+        <div class="rank_panel nomg">
+            <h2>
+                <b class="sghbb">轻漫画榜</b>
+            
+            </h2>
+            <div class="ranklist">
+                <ul>
+                          	
+                         {maccms:vod num=1 by=score order=desc}     	
+                    <li class="top_one">
+                        <i>1</i>
+                        <a href="[vod:link]" class="pic" target="_blank"><img alt="[vod:name len=9]" title="[vod:name len=9]" src="[vod:pic]"></a>
+                        <span class="info">
+                            <a alt="[vod:name len=9]" title="[vod:name len=9]" href="[vod:link]" class="pname w150" target="_blank">[vod:name len=9]</a>
+                            
+                             	<label class="pt">普通</label>
+                                    
+                            <a href="[vod:link]" target="_blank"><span class="intro">[vod:remarks]</span></a>
+                            <span class="hot">人气：<b>[vod:hits]</b></span>
+                        </span>
+                    </li>
+					{/maccms:vod}
+ 
+         	         {maccms:vod num=9  by=score order=desc start=2}                 	
+                    <li class="even"><i class="top">[vod:numjoin]</i><a href="[vod:link]" class="tit" target="_blank">[vod:name len=9]</a><span class="count">[vod:hits]</span></li>
+					{/maccms:vod}
+         	         
+                </ul>
+            </div>
+ 
+        </div>
+    </div>
+</div>
+<!-- PGT-2013-09-12 22:37:47-->
+<div class="hr_20"></div>
+{maccms:foot}
+ 
+ 
+<script type="text/javascript"> 
+$(document).ready(function(){
+	Cartoon.selectMenu("menuItemRank");
+});
+</script>
+ <!--百度自动提交代码-->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    
+var curProtocol = window.location.protocol.split(':')[0];
+    if 
+(curProtocol === 'https') {
+        bp.src = 
+'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        
+bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = 
+document.getElementsByTagName("script")[0];
+    
+s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+</body></html>

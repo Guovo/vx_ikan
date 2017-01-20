@@ -1,0 +1,1 @@
+var mac_flag='play',mac_link='/vodplayhtml/496-{src}-1.html?496-{src}-{num}', mac_name='喜盈门',mac_from='qiyi',mac_server='0',mac_note='',mac_url=unescape('%u6b63%u7247%24http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrny63wc.html');
